@@ -10,7 +10,6 @@ class ReportWorker
                 JasperReport::Manager.new data
               end
 
-    file = manager.write_to_pdf #_async
-    
+    manager.write_to_pdf # _async
   end
 end

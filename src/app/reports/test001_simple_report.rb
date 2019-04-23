@@ -1,7 +1,7 @@
 module Test001SimpleReport
   module MainReport
     class Manager < JasperReport::Manager
-      def transform_data data_path 
+      def transform_data data_path
       end
     end
 
@@ -15,4 +15,3 @@ module Test001SimpleReport
     end
   end
 end
-    

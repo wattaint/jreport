@@ -2,15 +2,15 @@ reports:
   main:
     file: test.jrxml
     parameters:
-      trade_date: data.trade_date
-      report_at: data.report_at
-    data_path: data.records
+      trade_date: report.parameters.trade_date
+      report_at: report.parameters.report_at
+    data_path: report.records
 
 schema:
   input:
     type: object
     required:
-    - data
+    - report
     properties:
       data:
         type: object

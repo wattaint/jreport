@@ -6,8 +6,6 @@ class ReportController < ApplicationController
 
   def create
     data = JSON.parse params[:data].to_json
-    puts '-- data --'
-    pp data
     report_name = data['name']
     render json: { data: (pdf report_name, data) }
     rescue Exception => e
@@ -21,8 +19,7 @@ class ReportController < ApplicationController
   def create_by_name
     data      = params[:data]
     data_type = params[:datatype] || 'json'
-    pp data_type
-
+    
     data = if %w[yml yaml].include? data_type
              YAML.load data
            else
@@ -30,7 +27,6 @@ class ReportController < ApplicationController
            end
 
     report_name = params[:report_name]
-    puts "===testtt", data
     render json: (pdf report_name, data)
     rescue Exception => e
       puts e.message

@@ -187,7 +187,7 @@ module JasperReport
       ret = {}
       params = @config['parameters'] || {}
       data   = @manager.data
-
+      
       if params.is_a? Hash
         params.each do |k, v|
           dig_path = if v.to_s == 'data._'
@@ -196,6 +196,7 @@ module JasperReport
                        # ['data'].concat v.to_s.split '.'
                        v.to_s.split '.'
                      end
+          
           value = data.send 'dig', *dig_path
           # ret[k] = parameter_formatter k, value
           ret[k] = { value: value, data_path: dig_path }
@@ -518,13 +519,14 @@ module JasperReport
       jasper_print = compile_to_jasper_print @parameters
       report_byte = JasperExportManager.export_report_to_pdf jasper_print
       ruby_string = String.from_java_bytes report_byte
-      puts '___'
-      p ruby_string
-      path = Rails.root.join 'tmp', @manager.uuid
+
+      path = Rails.root.join('tmp', @manager.uuid)
       puts "- file -> #{path}"
       File.open "#{path}.pdf", 'wb' do |f|
         f.write ruby_string
       end
+
+      @manager.uuid
     end
 
     def compile_to_pdf_async params = {}
@@ -690,12 +692,10 @@ module JasperReport
     end
 
     def write_to_pdf
-      puts '-- write_to_pdf --'
       @report.compile_to_pdf
     end
 
     def write_to_pdf_async
-      puts '=== write_to_pdf_async ==='
       @report.compile_to_pdf_async
     end
 

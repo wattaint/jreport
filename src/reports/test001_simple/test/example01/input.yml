@@ -1,0 +1,29 @@
+hash: erere
+data:
+  trade_date: "2018-06-02"
+  report_at: "2018-06-02 12:30:15"
+  records:
+  - firstname: a1
+    lastname: b1
+    age: 18
+
+  - firstname: a2
+    lastname: b2
+    age: 19
+
+  - firstname: a3
+    lastname: b3
+    age: 20
+
+  sub1_records:
+  - im: 10
+    mm: 20
+    ee: 30
+
+  - im: 11
+    mm: 21
+    ee: 31
+
+  - im: 12
+    mm: 22
+    ee: 32

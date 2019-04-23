@@ -1,0 +1,24 @@
+reports:
+  main:
+    file: test.jrxml
+    parameters:
+      trade_date: data.trade_date
+      report_at: data.report_at
+    data_path: data.records
+
+schema:
+  input:
+    type: object
+    required:
+    - data
+    properties:
+      data:
+        type: object
+        required:
+        - trade_date
+        - report_at
+        properties:
+          trade_date:
+            type: string
+          report_at:
+            type: string

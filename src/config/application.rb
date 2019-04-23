@@ -17,6 +17,12 @@ require "rails/test_unit/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+require 'digest'
+require 'securerandom'
+def sha256_uuid
+  Digest::SHA256.hexdigest(SecureRandom.base64)
+end
+
 module Jreport
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.

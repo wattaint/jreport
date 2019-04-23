@@ -4,4 +4,7 @@ services:
     build:
       context: ../src
       dockerfile: ../Dockerfile
-    
+    network_mode: bridge
+    image: us.gcr.io/dataplatform-1363/exp-jreport
+    tmpfs:
+    - /jreport/tmp/pids

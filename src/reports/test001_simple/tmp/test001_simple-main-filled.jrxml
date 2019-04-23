@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  --><jasperReport bottomMargin="20" columnWidth="555" leftMargin="20" name="test" pageHeight="842" pageWidth="595" rightMargin="20" topMargin="20" uuid="2398e542-b552-4716-ad2c-4b5f59aea14c" xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd">
+	<parameter class="java.lang.String" isForPrompting="false" name="trade_date"/>
+	<parameter class="java.lang.String" isForPrompting="false" name="report_at"/>
+	<parameter class="java.lang.String" isForPrompting="false" name="c"/>
+	<queryString>
+		
+	</queryString>
+	<field class="java.lang.String" name="firstname">
+		<fieldDescription><![CDATA[firstname]]></fieldDescription>
+	</field>
+	<field class="java.lang.String" name="lastname">
+		<fieldDescription><![CDATA[lastname]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement height="30" uuid="edb45150-e687-491d-81ca-0877f7872cdb" width="270" x="120" y="0"/>
+				<box leftPadding="5"/>
+				<textElement>
+					<font fontName="THSarabun" size="22"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{trade_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement height="30" uuid="020e3f02-f17e-491b-802f-aad886f4ccd9" width="120" x="0" y="0"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabun" isBold="true" size="22"/>
+				</textElement>
+				<text><![CDATA[Trade Date:]]></text>
+			</staticText>
+			<textField>
+				<reportElement height="30" uuid="1e67a181-0ef1-401b-b4b4-9406fbdd479d" width="270" x="120" y="30"/>
+				<box leftPadding="5"/>
+				<textElement>
+					<font fontName="THSarabun" size="22"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{report_at}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement height="30" uuid="3ce81a05-ea40-43ce-8993-f0e17bc980ea" width="120" x="0" y="30"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabun" isBold="true" size="22"/>
+				</textElement>
+				<text><![CDATA[Report At:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement height="30" uuid="85c752ea-3d1a-489f-955f-6fe71e0f37ac" width="100" x="101" y="37"/>
+				<textElement>
+					<font fontName="THSarabun" size="19"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firstname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement height="30" uuid="5c3d9261-6983-4a35-bf56-6f7537dacb68" width="100" x="303" y="47"/>
+				<textElement>
+					<font fontName="THSarabun" size="19"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lastname}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cbr200_statement_of_account" language="groovy" pageWidth="576" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="576" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="b2cddb92-6226-46d3-b6c5-0d32d8bb33ae">
+	<property name="ireport.zoom" value="6.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="sub_report_04_json_byte" class="java.lang.Byte[]" isForPrompting="false"/>
+	<parameter name="sub_report_04_json_root" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_04_json" class="java.io.ByteArrayInputStream" isForPrompting="false"/>
+	<parameter name="sub_report_04" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="sub_report_03_json_byte" class="java.lang.Byte[]" isForPrompting="false"/>
+	<parameter name="sub_report_03_json_root" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_03_json" class="java.io.ByteArrayInputStream" isForPrompting="false"/>
+	<parameter name="sub_report_03" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="sub_report_02_json_byte" class="java.lang.Byte[]" isForPrompting="false"/>
+	<parameter name="sub_report_02_json_root" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_02_json" class="java.io.ByteArrayInputStream" isForPrompting="false"/>
+	<parameter name="sub_report_02" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="sub_report_01_json_byte" class="java.lang.Byte[]" isForPrompting="false"/>
+	<parameter name="sub_report_01_json_root" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_01_json" class="java.io.ByteArrayInputStream" isForPrompting="false"/>
+	<parameter name="sub_report_01" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="sub_report_04_logo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_04_show_net_amount" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_04_net_amount_summary" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_04_as_of_date" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_03_logo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_03_pbl_transfer_date" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_03_pbl_transfer_acc" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_03_is_show_pbl_transfer" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_03_cash_balance" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_03_cust_name" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_03_address" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_03_as_of_date" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_02_logo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_02_pbl_transfer_date" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_02_pbl_transfer_acc" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_02_is_show_pbl_transfer" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_02_margin_balance" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_02_cash_balance" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_02_total_cash" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_02_total_margin" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_02_cust_name" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_02_address" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_02_as_of_date" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_01_logo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_01_cust_name" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_01_address" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sub_report_01_as_of_date" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="report_desc" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="report_time" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="report_date" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="report_no" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="PIC_PATH" class="java.lang.String"/>
+	<parameter name="REPORT3" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[REPORT3]]></parameterDescription>
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="print_page_1" class="java.lang.Boolean" isForPrompting="false">
+		<parameterDescription><![CDATA[print_page_1]]></parameterDescription>
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="print_page_2" class="java.lang.Boolean" isForPrompting="false">
+		<parameterDescription><![CDATA[print_page_2]]></parameterDescription>
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="print_page_3" class="java.lang.Boolean" isForPrompting="false">
+		<parameterDescription><![CDATA[print_page_3]]></parameterDescription>
+	</parameter>
+	<parameter name="print_page_more_1" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="print_page_break3" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[true]]></defaultValueExpression>
+	</parameter>
+	<parameter name="loan_no" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[loan_no]]></parameterDescription>
+	</parameter>
+	<field name="customer_id" class="java.lang.String">
+		<fieldDescription><![CDATA[customer_id]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<fieldDescription><![CDATA[address]]></fieldDescription>
+	</field>
+	<field name="cust_name" class="java.lang.String">
+		<fieldDescription><![CDATA[cust_name]]></fieldDescription>
+	</field>
+	<field name="total_margin" class="java.lang.String">
+		<fieldDescription><![CDATA[total_margin]]></fieldDescription>
+	</field>
+	<field name="total_cash" class="java.lang.String">
+		<fieldDescription><![CDATA[total_cash]]></fieldDescription>
+	</field>
+	<field name="margin_balance" class="java.lang.String">
+		<fieldDescription><![CDATA[margin_balance]]></fieldDescription>
+	</field>
+	<field name="cash_balance" class="java.lang.String">
+		<fieldDescription><![CDATA[cash_balance]]></fieldDescription>
+	</field>
+	<field name="net_amount_summary" class="java.lang.String">
+		<fieldDescription><![CDATA[net_amount_summary]]></fieldDescription>
+	</field>
+	<field name="cash_balance_3" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[cash_balance_3]]></fieldDescription>
+	</field>
+	<field name="as_of_date" class="java.lang.String">
+		<fieldDescription><![CDATA[as_of_date]]></fieldDescription>
+	</field>
+	<field name="date_index" class="java.lang.String">
+		<fieldDescription><![CDATA[date_index]]></fieldDescription>
+	</field>
+	<field name="show_net_amount" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[show_net_amount]]></fieldDescription>
+	</field>
+	<field name="is_show_pbl_transfer" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[is_show_pbl_transfer]]></fieldDescription>
+	</field>
+	<field name="pbl_transfer_acc" class="java.lang.String">
+		<fieldDescription><![CDATA[pbl_transfer_acc]]></fieldDescription>
+	</field>
+	<field name="pbl_transfer_date" class="java.lang.String">
+		<fieldDescription><![CDATA[pbl_transfer_date]]></fieldDescription>
+	</field>
+	<group name="grp_loan_no" isStartNewPage="true" isResetPageNumber="true" isReprintHeaderOnEachPage="true" footerPosition="CollateAtBottom">
+		<groupExpression><![CDATA[$F{customer_id}]]></groupExpression>
+		<groupHeader>
+			<band height="35">
+				<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				<textField>
+					<reportElement x="430" y="17" width="100" height="18" uuid="ea441d93-60be-4244-8ed6-ffa737b81ed0"/>
+					<textElement textAlignment="Right">
+						<font fontName="TH Sarabun New" size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="grp_loan_no">
+					<reportElement x="543" y="17" width="20" height="18" uuid="fa16977c-955d-45ec-8499-758ed8f6e300"/>
+					<textElement textAlignment="Left">
+						<font fontName="TH Sarabun New" size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="530" y="17" width="13" height="18" uuid="19db1bcd-dda0-407d-84f0-64747b957761"/>
+					<textElement textAlignment="Center">
+						<font fontName="TH Sarabun New" size="12"/>
+					</textElement>
+					<text><![CDATA[/]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="750">
+				<printWhenExpression><![CDATA[($V{PAGE_NUMBER} % 2) == 1]]></printWhenExpression>
+				<break>
+					<reportElement x="0" y="0" width="95" height="1" uuid="f58a2e2c-14a1-4b99-8c4f-a467e2a0d9ab">
+						<printWhenExpression><![CDATA[($V{PAGE_NUMBER} % 2) == 1]]></printWhenExpression>
+					</reportElement>
+				</break>
+				<staticText>
+					<reportElement positionType="Float" x="228" y="1" width="100" height="30" uuid="79a38a4b-ad32-482f-acef-9b0b31c07c39">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH Sarabun New" size="16"/>
+					</textElement>
+					<text><![CDATA[--- สิ้นสุดรายการ ---]]></text>
+				</staticText>
+			</band>
+		</groupFooter>
+	</group>
+	<detail>
+		<band height="1" splitType="Immediate">
+			<printWhenExpression><![CDATA[$P{print_page_1}]]></printWhenExpression>
+			<subreport>
+				<reportElement key="sub_report_01" positionType="Float" x="0" y="0" width="40" height="0" uuid="feed617e-4949-40ae-859b-10f0f276e851">
+					<printWhenExpression><![CDATA[$P{print_page_1}]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="logo">
+					<subreportParameterExpression><![CDATA[$P{sub_report_01_logo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="cust_name">
+					<subreportParameterExpression><![CDATA[$F{cust_name}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="address">
+					<subreportParameterExpression><![CDATA[$F{address}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="as_of_date">
+					<subreportParameterExpression><![CDATA[$F{as_of_date}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JsonDataSource(new java.io.ByteArrayInputStream($P{sub_report_01_json_byte}), $F{customer_id} + "_" + $F{date_index} + "_page_1")]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{sub_report_01}]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement positionType="Float" x="0" y="0" width="100" height="1" uuid="bacd2d4d-b420-4d03-85b7-e96e6e748d62">
+					<printWhenExpression><![CDATA[$P{print_page_2}]]></printWhenExpression>
+				</reportElement>
+			</break>
+		</band>
+		<band height="1">
+			<printWhenExpression><![CDATA[$P{print_page_2}]]></printWhenExpression>
+			<subreport runToBottom="true">
+				<reportElement key="sub_report_02" positionType="Float" x="0" y="0" width="40" height="0" uuid="d8dcabce-2881-489f-b3f5-4324d6c6530a">
+					<printWhenExpression><![CDATA[$P{print_page_2}]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="logo">
+					<subreportParameterExpression><![CDATA[$P{sub_report_02_logo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pbl_transfer_date">
+					<subreportParameterExpression><![CDATA[$F{pbl_transfer_date}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pbl_transfer_acc">
+					<subreportParameterExpression><![CDATA[$F{pbl_transfer_acc}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="is_show_pbl_transfer">
+					<subreportParameterExpression><![CDATA[$F{is_show_pbl_transfer}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="margin_balance">
+					<subreportParameterExpression><![CDATA[$F{margin_balance}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="cash_balance">
+					<subreportParameterExpression><![CDATA[$F{cash_balance}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="total_cash">
+					<subreportParameterExpression><![CDATA[$F{total_cash}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="total_margin">
+					<subreportParameterExpression><![CDATA[$F{total_margin}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="cust_name">
+					<subreportParameterExpression><![CDATA[$F{cust_name}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="address">
+					<subreportParameterExpression><![CDATA[$F{address}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="as_of_date">
+					<subreportParameterExpression><![CDATA[$F{as_of_date}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JsonDataSource(new java.io.ByteArrayInputStream($P{sub_report_02_json_byte}), $F{customer_id} + "_" + $F{date_index} + "_page_2")]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{sub_report_02}]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement positionType="Float" x="0" y="0" width="100" height="1" uuid="0769a38b-87ea-4426-970b-214308a6483d">
+					<printWhenExpression><![CDATA[$P{print_page_break3}]]></printWhenExpression>
+				</reportElement>
+			</break>
+		</band>
+		<band height="3">
+			<printWhenExpression><![CDATA[$P{print_page_3}]]></printWhenExpression>
+			<subreport>
+				<reportElement key="sub_report_03" positionType="Float" x="0" y="0" width="40" height="1" uuid="b472374f-2c88-4c8a-be83-362d1f9596ba">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<printWhenExpression><![CDATA[$P{print_page_3}]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="logo">
+					<subreportParameterExpression><![CDATA[$P{sub_report_03_logo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pbl_transfer_date">
+					<subreportParameterExpression><![CDATA[$F{pbl_transfer_date}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pbl_transfer_acc">
+					<subreportParameterExpression><![CDATA[$F{pbl_transfer_acc}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="is_show_pbl_transfer">
+					<subreportParameterExpression><![CDATA[$F{is_show_pbl_transfer}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="cash_balance">
+					<subreportParameterExpression><![CDATA[$F{cash_balance_3}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="cust_name">
+					<subreportParameterExpression><![CDATA[$F{cust_name}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="address">
+					<subreportParameterExpression><![CDATA[$F{address}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="as_of_date">
+					<subreportParameterExpression><![CDATA[$F{as_of_date}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JsonDataSource(new java.io.ByteArrayInputStream($P{sub_report_03_json_byte}), $F{customer_id} + "_" + $F{date_index} + "_page_3")]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{sub_report_03}]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement key="sub_report_04" positionType="Float" x="0" y="1" width="40" height="1" isPrintWhenDetailOverflows="true" uuid="72b38046-5d5d-4ca8-baa2-55ef1e8e8e7c">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<printWhenExpression><![CDATA[$P{print_page_3}]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="logo">
+					<subreportParameterExpression><![CDATA[$P{sub_report_04_logo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="show_net_amount">
+					<subreportParameterExpression><![CDATA[$F{show_net_amount}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="net_amount_summary">
+					<subreportParameterExpression><![CDATA[$F{net_amount_summary}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="as_of_date">
+					<subreportParameterExpression><![CDATA[$F{as_of_date}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JsonDataSource(new java.io.ByteArrayInputStream($P{sub_report_04_json_byte}), $F{customer_id} + "_" + $F{date_index} + "_page_4")]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{sub_report_04}]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement positionType="Float" x="0" y="2" width="100" height="1" uuid="bacd2d4d-b420-4d03-85b7-e96e6e748d62">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<printWhenExpression><![CDATA[$P{print_page_more_1}]]></printWhenExpression>
+				</reportElement>
+			</break>
+		</band>
+	</detail>
+</jasperReport>
